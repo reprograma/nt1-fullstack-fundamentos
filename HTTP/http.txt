@@ -1,0 +1,5 @@
+https://developer.mozilla.org/en-US/docs/Web/HTTP
+
+https://nandovieira.com.br/entendendo-um-pouco-mais-sobre-o-protocolo-http
+
+http://blog.alura.com.br/desmistificando-o-protocolo-http-parte-1/

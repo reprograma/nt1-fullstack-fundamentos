@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<title>{Reprograma} - Notas Finais</title>
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+</head>
+
+<body>
+
+	<header>
+		<div class="container">
+			<!-- <h1>{reprograma}</h1> -->
+			<img src="./img/logo_reprograma.png" />
+		</div>
+	</header>
+	<main>
+		<section class="container">
+			<h2>Alun@s</h2>
+			<table>
+				<thead>
+					<tr>
+						<th>Nome</th>
+						<th>Nota 1</th>
+						<th>Nota 2</th>
+						<th>Média Final</th>
+					</tr>
+				</thead>
+				<tbody id="tabela-alunos">
+					<tr class="aluno" id="primeiro-da-lista">
+						<td class="info-nome">Nathalia</td>
+						<td class="info-notaum">5.75</td>
+						<td class="info-notadois">10</td>
+						<td class="info-media">0</td>
+					</tr>
+
+					<tr class="aluno">
+						<td class="info-nome">João</td>
+						<td class="info-notaum">8</td>
+						<td class="info-notadois">10</td>
+						<td class="info-media">0</td>
+					</tr>
+
+					<tr class="aluno">
+						<td class="info-nome">Mariana</td>
+						<td class="info-notaum">9</td>
+						<td class="info-notadois">6</td>
+						<td class="info-media">0</td>
+					</tr>
+
+					<tr class="aluno">
+						<td class="info-nome">Douglas</td>
+						<td class="info-notaum">4</td>
+						<td class="info-notadois">3</td>
+						<td class="info-media">0</td>
+					</tr>
+					<tr class="aluno">
+						<td class="info-nome">Tatiana</td>
+						<td class="info-notaum">3</td>
+						<td class="info-notadois">6</td>
+						<td class="info-media">0</td>
+					</tr>
+				</tbody>
+			</table>
+
+		</section>
+
+		<section class="container">
+			<h2 id="titulo-form">Adicionar Alun@</h2>
+			<form id="form-adiciona">
+				<div class="grupo">
+					<label for="nome">Nome:</label>
+					<input id="nome" name="nome" type="text" placeholder="digite o nome do aluno" class="campo">
+				</div>
+				<div class="grupo">
+					<label for="notaum">Nota 1:</label>
+					<input id="notaum" name="notaum" type="text" placeholder="digite a primeira nota" class="campo campo-medio">
+				</div>
+				<div class="grupo">
+					<label for="notadois">Nota 2:</label>
+					<input id="notadois" name="notadois" type="text" placeholder="digite a segunda nota" class="campo campo-medio">
+				</div>
+
+				<button id="adicionar-aluno" class="botao bto-principal">Adicionar</button>
+			</form>
+		</section>
+
+	</main>
+
+	<script>
+		var tituloDaPagina = document.querySelector("h2");
+		// console.log(tituloDaPagina);
+		// console.log(tituloDaPagina.textContent);
+
+		// tituloDaPagina.textContent = "Novo título";
+
+		var aluno = document.querySelector("#primeiro-da-lista");
+		// var aluno = document.getElementById("primeiro-da-lista");
+		var tdPrimeiraNota = aluno.querySelector(".info-notaum");
+		var primeiraNota = tdPrimeiraNota.textContent;
+		var tdSegundaNota = aluno.querySelector(".info-notadois");
+		var segundaNota = tdSegundaNota.textContent;
+
+		var mediaFinal = aluno.querySelector(".info-media");
+
+		console.log(primeiraNota);
+		console.log(segundaNota);
+
+		var notaEhValida = true;
+
+		if (primeiraNota < 0 || primeiraNota > 10) {
+			notaEhValida = false;
+			mediaFinal.textContent = "Primeira Nota Inválida";
+		}
+
+		if (notaEhValida) {
+			var mediaCalculada = (parseFloat(primeiraNota) + parseFloat(segundaNota)) / 2;
+			mediaFinal.textContent = mediaCalculada;
+		}
+
+	</script>
+
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+HTML
+CSS
+JS
+    DOM
+    variáveis
+        let
+        const
+        var
+    addEventListener - eventos
+    preventDefault()
+    if - estrutura de condição
+    appendChild
+    insertBefore
+    parentNode
+    toFixed
+    textContent/innerHTML
+    value
+    createTextNode
+    createElement
+    querySelector/getElementById/querySelectorAll
+    formulário
+    adicionar estilo - classList.add / style.color / setAttribute(class, nomeDaClasse)
+    parseFloat
+    tamanho do array - length
+    
+    for - estrutura de repetição
+    array
+    objeto
+    function - function(parametro1, parametro2)
+        retorno da função

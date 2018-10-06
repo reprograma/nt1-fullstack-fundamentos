@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<title>{Reprograma} - Cálculo de Juros Simples</title>
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<header>
+		<div class="container">
+			<!-- <h1>{reprograma}</h1> -->
+			<img src="./img/logo_reprograma.png" />
+		</div>
+	</header>
+	<main>
+		<section class="container">
+			<h2>Juros</h2>
+			<table>
+				<thead>
+					<tr>
+						<th>Dinheiro</th>
+						<th>Taxa de Juros</th>
+						<th>Tempo</th>
+						<th>Resultado</th>
+					</tr>
+				</thead>
+				<tbody id="tabela-juros">
+
+					<tr class="juros">
+						<td class="info-dinheiro">1000</td>
+						<td class="info-taxa">0.03</td>
+						<td class="info-tempo">12</td>
+						<td class="info-resultado">0</td>
+					</tr>
+					<tr class="juros">
+						<td class="info-dinheiro">1000</td>
+						<td class="info-taxa">0.03</td>
+						<td class="info-tempo">12</td>
+						<td class="info-resultado">0</td>
+					</tr>
+					<tr class="juros">
+						<td class="info-dinheiro">1000</td>
+						<td class="info-taxa">0.03</td>
+						<td class="info-tempo">12</td>
+						<td class="info-resultado">0</td>
+					</tr>
+					<tr class="juros">
+						<td class="info-dinheiro">1000</td>
+						<td class="info-taxa">0.03</td>
+						<td class="info-tempo">12</td>
+						<td class="info-resultado">0</td>
+					</tr>
+					<tr class="juros">
+						<td class="info-dinheiro">1000</td>
+						<td class="info-taxa">0.03</td>
+						<td class="info-tempo">12</td>
+						<td class="info-resultado">0</td>
+					</tr>
+
+				</tbody>
+			</table>
+
+		</section>
+
+		<section class="container">
+			<h2 id="titulo-form">Cálculo de Juros</h2>
+			<form id="form-adiciona">
+				<div class="grupo">
+					<label for="dinheiro">Money ($):</label>
+					<input id="dinheiro" name="dinheiro" type="text" placeholder="digite a grana" class="campo">
+				</div>
+				<div class="grupo">
+					<label for="taxa">Taxa de Juros:</label>
+					<input id="taxa" name="taxa" type="text" placeholder="e a taxa?" class="campo campo-medio">
+				</div>
+				<div class="grupo">
+					<label for="tempo">Quanto Tempo?</label>
+					<input id="tempo" name="tempo" type="text" placeholder="mas quanto tempo? em meses" class="campo campo-medio">
+				</div>
+
+				<button id="adicionar-juros" class="botao bto-principal">Adicionar</button>
+				<button id="limpar-form" class="botao bto-principal">Limpar</button>
+			</form>
+		</section>
+
+	</main>
+
+	<script src="./js/form.js"></script>
+	<script src="./js/juros.js"></script>
+
+</body>
+
+</html>
